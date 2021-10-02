@@ -38,15 +38,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-link"><a href="{{ route('mypage') }}">マイページ</a></li>
-                    <li class="nav-link"><a href="{{ route('item_list') }}">商品一覧</a></li>
-                    <li class="nav-link"><a href="{{ route('cart') }}">カート</a></li>
-                </ul>
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-link"><a href="{{ route('mypage') }}" class="link">マイページ</a></li>
+                    <li class="nav-link"><a href="{{ route('item_list') }}" class="link">商品一覧</a></li>
+                    <li class="nav-link"><a href="{{ route('cart') }}" class="link">カート</a></li>
+                
                     <!-- Authentication Links -->
                     @guest
                         @if (Route::has('login'))
