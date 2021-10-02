@@ -37,7 +37,7 @@ class Item extends Model
 
     public function getItems(){
         $query = Item::where('status', 0)->orderBy('created_at', 'DESC');
-        $items = $query->simplePaginate(6);
+        $items = $query->paginate(6);
 
         return $items;
     }
