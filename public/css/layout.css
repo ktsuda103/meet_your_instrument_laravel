@@ -7,6 +7,22 @@
     color:#808080;
 }
 
+.sentence{
+    color: #808080;
+    padding: 20px 0px;
+}
+
+.top-image{
+    margin-bottom: 100px;
+    object-fit: contain;
+    height: 200px;
+}
+
+.top-content{
+    background-color: #fff;
+    padding: 20px;
+}
+
 .my-card-body{
     height: calc(100vh - (55px + 48px));
 }

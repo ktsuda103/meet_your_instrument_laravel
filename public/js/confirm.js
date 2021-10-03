@@ -6,3 +6,11 @@ function deleteHandle(event){
         alert('キャンセルしました');
     }
 }
+
+const scrollTopButton = document.querySelector('#start-btn');
+scrollTopButton.addEventListener('click',() => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
