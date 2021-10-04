@@ -13,7 +13,7 @@ class CreateItemsTable extends Migration
      */
     public function up()
     {
-        Schema::connection('public')->create('items', function (Blueprint $table) {
+        Schema::connection('online_shop')->create('items', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
             $table->string('name');
@@ -27,7 +27,7 @@ class CreateItemsTable extends Migration
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
 
-        DB::connection('public')->statement("
+        DB::connection('online_shop')->statement("
             create or replace function set_update_time() returns trigger language plpgsql as
             $$
                 begin
@@ -37,7 +37,7 @@ class CreateItemsTable extends Migration
             $$;
         ");
 
-        DB::connection('public')->statement("
+        DB::connection('online_shop')->statement("
             create trigger update_trigger before update on items for each row
             execute procedure set_update_time();
         ");
@@ -51,11 +51,11 @@ class CreateItemsTable extends Migration
      */
     public function down()
     {
-        Schema::connection('public')->dropIfExists('items');
-        DB::connection('public')->statement("
+        Schema::connection('online_shop')->dropIfExists('items');
+        DB::connection('online_shop')->statement("
             DROP TRIGGER update_trigger ON items;
         ");
-        DB::connection('public')->statement("
+        DB::connection('online_shop')->statement("
             DROP FUNCTION set_update_time();
         ");
     }
