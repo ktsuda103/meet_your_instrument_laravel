@@ -36,6 +36,11 @@
             </div>
             <hr>
         @endforeach
+        <div class="row">
+        <div class="offset-5"> 
+            {{ $posts->links() }}
+        </div>
+        </div>
     </div>
 </div>
 @endsection

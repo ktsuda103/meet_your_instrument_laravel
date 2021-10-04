@@ -21,7 +21,8 @@ class User extends Authenticatable
             $query->where('user_id', $user['id'])->where('destination_user_id', $other_user['id']);
         })->orWhere(function($query) use($user, $other_user){
             $query->where('destination_user_id', $user['id'])->where('user_id', $other_user['id']);
-        })->orderBy('posts.created_at', 'DESC')->get();
+        })->orderBy('posts.created_at', 'DESC')->paginate(6);
+
 
         return $posts;
     }
