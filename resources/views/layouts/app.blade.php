@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ secure_asset('assets/js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     @yield('javascript')
 
     <!-- Fonts -->
@@ -22,8 +22,8 @@
 
 
     <!-- Styles -->
-    <link href="{{ secure_asset('assets/css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/css/layout.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/layout.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
 </head>
