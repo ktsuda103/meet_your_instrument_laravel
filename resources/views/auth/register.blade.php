@@ -63,7 +63,7 @@
                         <div class="form-group row">
                             <label for="img" class="col-md-4 col-form-label text-md-right">アイコン画像</label>
                             <div class="col-md-6">
-                                <input type="file" name="img" id="img" class="form-control" style="border: none;">  
+                                <input type="file" name="img" id="img" class="form-control" style="border: none;" autocomplete="img">  
                                 @error('img')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

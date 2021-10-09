@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="{{ asset('storage/121589.jpg') }}" class=" top-image">
+                    <img src="s3://meet-your-instrument-picture/test/{{121589.jpg}}" class=" top-image">
                 </div>
             </div>
             <div class="row">

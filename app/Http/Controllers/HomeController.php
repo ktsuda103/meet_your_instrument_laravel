@@ -58,7 +58,7 @@ class HomeController extends Controller
             $data = $request->all();
             $img = $request->file('img');
             if($request->hasFile('img')){
-                $path = \Storage::put('/public', $img);
+                $path = \Storage::disk('s3')->put('/test', $img,'public');
                 $path = explode('/', $path);
             } else {
                 $path = null;
