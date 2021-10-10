@@ -15,6 +15,7 @@ use App\Models\Favorite;
 use App\Models\Friend;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Storage;
 
 
 class HomeController extends Controller
@@ -57,12 +58,9 @@ class HomeController extends Controller
             $user = \Auth::user();
             $data = $request->all();
             $img = $request->file('img');
-            if($request->hasFile('img')){
-                $path = \Storage::disk('s3')->put('/test', $img,'public');
-                $path = explode('/', $path);
-            } else {
-                $path = null;
-            }
+            
+            $path = Storage::disk('s3')->putFile('/test', $img,'public');
+                
             $item_model = new Item();
             $item_model->insertItem($data,$path,$user);
             

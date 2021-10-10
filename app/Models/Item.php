@@ -15,7 +15,7 @@ class Item extends Model
             'name' => $data['name'],
             'price' => $data['price'],
             'stock' => $data['stock'],
-            'img' => $path[1],
+            'img' => $path,
             'type' => $data['type'],
             'status' => $data['status'],
             'comment' => $data['comment'],

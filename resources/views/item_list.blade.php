@@ -38,7 +38,7 @@
                 @endif
             </div>
             <div class="card-body text-center" style="padding: 20px;">
-                <img src="{{ '/storage/' .$item->img }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
+                <img src="{{ Storage::disk('s3')->url("$item->img") }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
             </div>
             <div class="card-footer">
                 <p style="margin:0px;">価格：￥{{ number_format($item->price) }}</p>

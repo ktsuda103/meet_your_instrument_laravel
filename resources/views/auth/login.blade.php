@@ -61,15 +61,15 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="s3://meet-your-instrument-picture/test/121589.jpg" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/121589.jpg") }}" class=" top-image">
                 </div>
             </div>
             <div class="row">
                 <div class="col-3 col-md-4">
-                    <img src="{{ asset('storage/building_music_gakki.png') }}" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/buildingmusicgakki.png") }}" class=" top-image">
                 </div>
                 <div class="col-3 col-md-3">
-                    <img src="{{ asset('storage/necchusyou_face_boy3.png') }}" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/121589.jpg") }}" class=" top-image">
                 </div>
                 <div class="col-6 col-md-5">
                     <div class="sentence">
@@ -90,7 +90,7 @@
                     </div>    
                 </div>
                 <div class="col-6 col-md-5">
-                    <img src="{{ asset('storage/present_girls.png') }}" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/121589.jpg") }}" class=" top-image">
                 </div>
             </div>
             <div class="text-center">
