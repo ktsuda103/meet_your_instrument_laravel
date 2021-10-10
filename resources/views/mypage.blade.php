@@ -10,7 +10,7 @@
                 {{ session('success') }}
             </div>
         @endif
-        <img src="{{ '/storage/' .$user->img }}" alt="" style="height: 120px; border:1px solid #ccc; margin-bottom: 20px;">
+        <img src="{{ Storage::disk('s3')->url("$user->img") }}" alt="" style="height: 120px; border:1px solid #ccc; margin-bottom: 20px;">
         <p>名前：{{ $user['name'] }}</p>
         <p>メールアドレス：{{ $user['email'] }}</p>
         <div class="row">

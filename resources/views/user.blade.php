@@ -15,7 +15,7 @@
                 {{ session('danger') }}
             </div>
         @endif
-        <img src="{{ '/storage/' .$other_user->img }}" alt="" style="height: 120px; border:1px solid #ccc; margin-bottom: 20px;">
+        <img src="{{ Storage::disk('s3')->url("$other_user->img") }}" alt="" style="height: 120px; border:1px solid #ccc; margin-bottom: 20px;">
         <p>名前：{{ $other_user['name'] }}</p>
         
         

@@ -19,7 +19,7 @@
                     
                 </div>
                 <div class="card-body" style="padding: 20px;">
-                    <img src="{{ '/storage/' .$favorite->img }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
+                    <img src="{{ Storage::disk('s3')->url("$favorite->img") }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
                 </div>
                 <div class="card-footer">
                     <p style="margin:0px;">価格：¥{{ number_format($favorite->price) }}</p>

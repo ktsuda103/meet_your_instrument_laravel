@@ -27,7 +27,7 @@
         @foreach($posts as $post)
             <div class="row">
                 <div class="col-2">
-                    <img src="{{ '/storage/' .$post->img }}" alt="" style="height: 50px; border:1px solid #ccc; margin-bottom: 20px;">
+                    <img src="{{ Storage::disk('s3')->url("$post->img") }}" alt="" style="height: 50px; border:1px solid #ccc; margin-bottom: 20px;">
                 </div>
                 <div class="col-10">
                     <p>{{ $post->comment }}</p>

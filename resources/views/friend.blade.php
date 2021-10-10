@@ -19,7 +19,7 @@
                 </div>
                 <div class="card-body text-center" style="padding: 20px;">
                 <a href="{{ route('user', ['id' => $friend->other_user_id]) }}">
-                    <img src="{{ '/storage/' .$friend->img }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
+                    <img src="{{ Storage::disk('s3')->url("$friend->img") }}" class="img-fluid" style=" object-fit: contain; width: 200px; height: 140px;">
                 </a>
                 </div>
                 <div class="card-footer">

@@ -7,7 +7,7 @@
                 {{ $item->name }}
             </div>
             <div class="card-body text-center  my-card-body row">
-                <img src="{{ '/storage/' .$item->img }}" class="col-md-6 picture">
+                <img src="{{ Storage::disk('s3')->url("$item->img") }}" class="col-md-6 picture">
                 <div class="col-md-6 text-left">
             
                 <p>価格：¥{{ number_format($item->price) }}</p>

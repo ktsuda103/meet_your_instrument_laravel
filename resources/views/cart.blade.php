@@ -22,7 +22,7 @@
 @if(!$carts->isEmpty())
     @foreach($carts as $cart)
         <div class="row">
-            <img src="{{ '/storage/' .$cart->img }}" class="col-2">
+            <img src="{{ Storage::disk('s3')->url("$cart->img") }}" class="col-2">
             <p class="col-4">{{ $cart->name }}</p>
             <form action="{{ route('delete_cart') }}" class="col-2" method="post">
             @csrf
