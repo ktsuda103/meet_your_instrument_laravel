@@ -8,6 +8,8 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+
 
 class RegisterController extends Controller
 {
@@ -66,10 +68,10 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         if(request('img')){
-        $img=request()->file( 'img')->getClientOriginalName();
-        request()->file( 'img')->storeAs('public/', $img);
+        $img=request()->file( 'img');
+        $img = Storage::disk('s3')->putFile('/test', $img,'public');
         } else {
-            $img = 'default.png';
+            $img = 'test/default.png';
         }
         // $img = $request->file('img');
         //     if($request->hasFile('img')){
