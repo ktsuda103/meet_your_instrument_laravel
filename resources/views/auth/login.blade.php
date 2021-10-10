@@ -69,7 +69,7 @@
                     <img src="{{ Storage::disk('s3')->url("test/buildingmusicgakki.png") }}" class=" top-image">
                 </div>
                 <div class="col-3 col-md-3">
-                    <img src="{{ Storage::disk('s3')->url("test/121589.jpg") }}" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/necchusyoufaceboy3.png") }}" class=" top-image">
                 </div>
                 <div class="col-6 col-md-5">
                     <div class="sentence">
@@ -90,7 +90,7 @@
                     </div>    
                 </div>
                 <div class="col-6 col-md-5">
-                    <img src="{{ Storage::disk('s3')->url("test/121589.jpg") }}" class=" top-image">
+                    <img src="{{ Storage::disk('s3')->url("test/presentgirls.png") }}" class=" top-image">
                 </div>
             </div>
             <div class="text-center">
