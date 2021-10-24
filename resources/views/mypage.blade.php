@@ -27,6 +27,7 @@
         <h4>出品一覧</h4>
         <div class="container">
             <div class="row">
+            @if(isset($my_items))
                 @foreach($my_items as $item)
                     <div class="card col-md-4 p-0">
                         <div class="card-header" style="background-color:#cccccc;">
@@ -66,7 +67,9 @@
                         
                     </div>
                 @endforeach
-                
+            @else
+                <p>投稿はまだありません。</p>
+            @endif
             </div>
         </div>
     </div>
