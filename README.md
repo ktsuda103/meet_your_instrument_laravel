@@ -31,7 +31,8 @@ https://meet-your-instrument.herokuapp.com/
 ・mySQL5.7<br>
 
 **インフラ**<br>
-・Heroku<br>
+・MAMP（開発環境）<br>
+・Heroku（本番環境）<br>
 ・Amazon S3<br>
 
 ## ER図
