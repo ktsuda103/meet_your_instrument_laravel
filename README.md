@@ -34,10 +34,6 @@ https://meet-your-instrument.herokuapp.com/
 ・Heroku<br>
 ・Amazon S3<br>
 
-**バージョン管理**<br>
-・Git 2.15.0<br>
-・GitHub<br>
-
 ## ER図
 <img width="1067" alt="スクリーンショット 2021-10-10 15 22 06" src="https://user-images.githubusercontent.com/86056191/136685071-7454018f-e889-42dc-a20e-15c0ff1c41cc.png">
 
