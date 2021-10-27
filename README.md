@@ -10,10 +10,6 @@ meet_your_instrumentでは、そんなあなたに楽器と出逢う機会を与
 ## アプリURL
 https://meet-your-instrument.herokuapp.com/
 
-## アプリ概要
-どんなアプリ？
-<img width="1053" alt="スクリーンショット 2021-10-10 14 54 10" src="https://user-images.githubusercontent.com/86056191/136684245-6aa05ab4-5cc6-4434-805c-5200024322fa.png">
-
 ## 使用技術
 **バックエンド**<br>
 ・PHP 7.3<br>
@@ -38,6 +34,10 @@ https://meet-your-instrument.herokuapp.com/
 ## ER図
 <img width="1067" alt="スクリーンショット 2021-10-10 15 22 06" src="https://user-images.githubusercontent.com/86056191/136685071-7454018f-e889-42dc-a20e-15c0ff1c41cc.png">
 
+
+## アプリ概要
+どんなアプリ？
+<img width="1053" alt="スクリーンショット 2021-10-10 14 54 10" src="https://user-images.githubusercontent.com/86056191/136684245-6aa05ab4-5cc6-4434-805c-5200024322fa.png">
 
 
 
