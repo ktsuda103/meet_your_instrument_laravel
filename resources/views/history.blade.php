@@ -22,7 +22,7 @@
 @if(!$histories->isEmpty())
     @foreach($histories as $history)
         <div class="row">
-            <img src="{{ '/storage/' .$history->img }}" class="col-2" >
+            <img src="{{ Storage::disk('s3')->url("$history->img") }}" class="col-2" >
             <p class="col-4">{{ $history->name }}</p>
             <p class="col-2">￥{{ number_format($history->price) }}</p>
             <p class="col-2">{{ $history->created_at }}</p>
